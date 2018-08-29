@@ -232,7 +232,7 @@ class CurlInitializer
         return $ch;
     }
 
-    protected function custom2($endpoint, $params = [])
+    protected function custom2($method, $endpoint, $params = [])
     {
         $ch = curl_init();
         list($url, $extra) = UrlNormalizer::twitterSplitUrlAndParameters($endpoint);
